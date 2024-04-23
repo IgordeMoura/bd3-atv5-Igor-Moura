@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividade - Firebase</title>
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+    <body>
+
+        <h1>Atividade - Firebase</h1>
+
+        <div>
+
+            <div>
+                <form id="add-student-form">
+                    <input type="text" name="turma" id="turma" placeholder="Digite a Turma">
+                    <input type="text" name="nome" id="nome" placeholder="Digite o Nome do Aluno(a)">
+                    <input type="text" name="email" id="email" placeholder="Digite o Email do Aluno(a)">
+                    <input type="text" name="telefoneAluno" id="telefoneAluno" placeholder="Digite o Telefone do Aluno(a)">
+                    <input type="text" name="telefoneResponsa" id="telefoneResponsa" placeholder="Digite o Telefone do Responsavel">
+                    <input type="text" name="cpfAluno" id="cpfAluno" placeholder="Digite o CPF do Aluno(a)">
+                    <input type="text" name="rgAluno" id="rgAluno" placeholder="Digite o RG do Aluno(a)">
+                    <input type="text" name="dataNasc" id="dataNasc" placeholder="Digite a Data de Nascimento do Aluno(a)">
+                    <button type="submit">Cadastrar</button>
+                </form>
+                <ul id="student-list">
+                        
+                </ul>
+            </div>               
+
+        </div>
+    </body>
+
+
+
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+
+    <!-- firestore -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+
+    <!-- dados de credenciais de acesso ao FireBase -->
+    <script>
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyA2tHYurnJIC8XZFo6zKeVbbJYvwaj_mgk",
+            authDomain: "bd3-nosql-e045f.firebaseapp.com",
+            projectId: "bd3-nosql-e045f",
+            storageBucket: "bd3-nosql-e045f.appspot.com",
+            messagingSenderId: "808640823604",
+            appId: "1:808640823604:web:4ade7f87d313c53f15a561",
+            measurementId: "G-R5BMTND2BG"
+          };
+
+        /*Inicialização do Firebase no App Web*/
+        firebase.initializeApp(firebaseConfig);
+
+        /*Inicialização a Conexão com o Banco de Dados NOSQL Firestore*/
+        const db = firebase.firestore();
+
+        /*Teste da Conexão com o Firestore
+        console.log('Teste de Conexão com o Firestore: ')
+        console.log(db);*/
+
+    </script>
+
+    <script src="./script.js"></script>
+
+</html>
