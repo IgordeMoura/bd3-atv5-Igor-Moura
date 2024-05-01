@@ -7,32 +7,41 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Atividade - Firebase</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="style.css">
 
     </head>
 
     <body>
 
-        <h1>Atividade - Firebase</h1>
+        
+        <div class="container">
+            
+            <h1>Atividade - Firebase</h1>
+            <div class="interface">
+                <div class="formulario">
+                    <h2> Cadastrar Alunos</h2>
+                    <form id="add-student-form">
+                        <input type="text" name="turma" id="turma" placeholder="Digite a Turma">
+                        <input type="text" name="nome" id="nome" placeholder="Digite o Nome do Aluno(a)">
+                        <input type="text" name="email" id="email" placeholder="Digite o Email do Aluno(a)">
+                        <input type="text" name="telefoneAluno" id="telefoneAluno" placeholder="Digite o Telefone do Aluno(a)">
+                        <input type="text" name="telefoneResponsa" id="telefoneResponsa" placeholder="Digite o Telefone do Responsavel">
+                        <input type="text" name="cpfAluno" id="cpfAluno" placeholder="Digite o CPF do Aluno(a)">
+                        <input type="text" name="rgAluno" id="rgAluno" placeholder="Digite o RG do Aluno(a)">
+                        <input type="text" name="dataNasc" id="dataNasc" placeholder="Digite a Data de Nascimento do Aluno(a)">
+                        <button type="submit">Cadastrar</button>
+                    </form>
 
-        <div>
-
-            <div>
-                <form id="add-student-form">
-                    <input type="text" name="turma" id="turma" placeholder="Digite a Turma">
-                    <input type="text" name="nome" id="nome" placeholder="Digite o Nome do Aluno(a)">
-                    <input type="text" name="email" id="email" placeholder="Digite o Email do Aluno(a)">
-                    <input type="text" name="telefoneAluno" id="telefoneAluno" placeholder="Digite o Telefone do Aluno(a)">
-                    <input type="text" name="telefoneResponsa" id="telefoneResponsa" placeholder="Digite o Telefone do Responsavel">
-                    <input type="text" name="cpfAluno" id="cpfAluno" placeholder="Digite o CPF do Aluno(a)">
-                    <input type="text" name="rgAluno" id="rgAluno" placeholder="Digite o RG do Aluno(a)">
-                    <input type="text" name="dataNasc" id="dataNasc" placeholder="Digite a Data de Nascimento do Aluno(a)">
-                    <button type="submit">Cadastrar</button>
-                </form>
-                <ul id="student-list">
-                        
-                </ul>
-            </div>               
+                </div>                          
+                <div class="exibição">
+                    <h2>Alunos Cadastrados</h2>
+                    <div class="alunos">
+                        <ul id="student-list">
+                            
+                        </ul>
+                    </div>
+                </div>               
+            </div>            
 
         </div>
     </body>

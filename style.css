@@ -1,0 +1,120 @@
+body h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+}
+
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+li{
+    padding: 20px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    position: relative;
+    border-bottom: 1px solid #e6e6e6;
+    box-shadow: 3px 3px 7px #707070;;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li span{
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+li div{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background: rgba(255,255,255,0.6);
+    width: 40px;
+    text-align: center;
+    padding: 10px 0;
+    font-weight:  bold;
+    cursor:  pointer;
+}
+
+.container{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+.interface{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 40%;
+    margin: 0;
+    margin-top: 5%;
+    flex-direction: row;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px #707070;
+    padding-bottom: 65px;
+}
+
+.formulario{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    border-right: 1px solid #9c9c9c;
+    margin-right: 15px;
+}
+
+.formulario button{
+    border-radius: 15px;
+    background-color: #45926c;
+    color: white;
+    border: none;
+    padding: 2%;
+    cursor: pointer;
+}
+
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 20vw;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario input{
+    width: 70%;
+    margin-bottom: 2.5%;
+    border: none;
+    border-bottom: 1px solid #45926c;
+}
+
+.exibição{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+.alunos{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    text-align: center;
+}

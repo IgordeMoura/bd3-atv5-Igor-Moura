@@ -88,5 +88,6 @@ form.addEventListener('submit', (event) =>{
         form.dataNasc.value = '';
         window.location.reload();
     })
+    alert('livro cadastrado com sucesso');
 });
  
